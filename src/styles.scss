@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --text_color: #ffe600;
+    --body: #d9d9d9;
+    --main: orangered;
+    --bg_color: black;
+    --text_color: white;
+  }
+
+  a{
+    color: white;
+    text-decoration: none;
+  }
+  

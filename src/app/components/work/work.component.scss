@@ -1,0 +1,111 @@
+.container {
+  width: 100%;
+  transition: 0.9s ease;
+
+  .body {
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+
+    h1{
+        font-size: 44px;
+        margin-right: 200px;
+        line-height: 56px;
+        padding-top: 50px;
+    }
+
+    .work{
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 40px;
+
+        p{
+            color: black;
+            text-align: center;
+        }
+
+        img{
+            width: 100%;
+            height: 250px;
+            border-radius: 20px;
+        }
+
+        .workback{
+            height: 250px;
+            border-radius: 20px;
+        }
+
+        .work1{
+            width: 50%;
+            margin: 20px;
+
+        }
+        .work1{
+            width: 50%;
+        }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+    .container {
+        width: 100%;
+        transition: 0.9s ease;
+      
+        .body {
+          width: 80%;
+          margin: 0 auto;
+          font-family: 'Poppins', sans-serif;
+      
+          h1{
+            width: 100%;
+              font-size: 24px;
+              margin-right: -200px;
+              line-height: 56px;
+              padding-top: 50px;
+          }
+      
+          .work{
+              display: flex;
+              flex-direction: column;
+              width: 100%;
+              margin: 0 auto;
+              margin-top: 40px;
+      
+              p{
+                width: 100%;
+                  color: black;
+                  text-align: center;
+              }
+      
+              img{
+                  width: 100%;
+                  height: 250px;
+                  border-radius: 20px;
+              }
+      
+              .workback{
+                  height: 250px;
+                  border-radius: 20px;
+              }
+      
+              .work1{
+                  width: 100%;
+                  margin: 0;
+
+                  p{
+                    margin:0;
+                    width: 100%;
+                    word-wrap: break-word;
+                  }
+      
+              }
+              .work1{
+                  width: 100%;
+              }
+          }
+        }
+      }
+}

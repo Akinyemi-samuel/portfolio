@@ -1,0 +1,150 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  // max-width: 1400px;
+  // margin: 0 auto;
+}
+
+.con_sec {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar {
+  width: 10%;
+  height: 100vh;
+  max-height: 1000px;
+  background: #212529;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: #212529;
+  font-size: 0.9rem;
+  font-family: "Abel", serif;
+  position: static;
+}
+
+.navbar .nav {
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.menu {
+  display: none;
+}
+
+.navbar .nav li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .links li {
+  padding: 20px 0;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.navbar p {
+  color: orangered;
+}
+
+.navbar p span {
+  color: white;
+}
+
+.navbar .links li::after {
+  content: " />";
+  clear: both;
+  color: orangered;
+  display: table;
+  display: none;
+}
+
+.navbar .links li:hover::after {
+  display: block;
+}
+
+.column {
+  width: 90%;
+}
+
+
+// THE NAVBAR RESPONSIVENESS FOR MOBILE
+.menudiv{
+    position: fixed;
+    width: 40%;
+    height: 100vh;
+    top: 11%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 9;
+    font-family: "Abel", serif;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    background:   #212529;
+    transition: 0.9s ease;
+    transition-timing-function: ease-in-out;
+  
+    li{
+      text-decoration: none;
+      list-style-type: none;
+      padding-top: 30px;
+    }
+    .menuicons{
+      padding-bottom: 40px;
+      margin-right: -20px;
+    }
+  }
+  
+
+@media screen and (max-width: 600px) {
+  .con_sec {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  .menu {
+    display: block;
+
+    img {
+      width: 30px;
+    }
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100px;
+    padding: 20px 0;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .username {
+    display: none;
+  }
+
+  .navdetails {
+    display: none;
+  }
+}

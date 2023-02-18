@@ -1,0 +1,23 @@
+.missing{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+}
+
+h1{
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    line-height: 86px;
+    font-size: 60px;
+}
+p{
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    margin-top: 20px;
+}
