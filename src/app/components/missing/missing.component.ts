@@ -10,7 +10,7 @@ export class MissingComponent implements OnInit {
   constructor(private route:Router) {}
   
   ngOnInit(): void {
-    setInterval(() => {
+    setTimeout(() => {
       this.route.navigateByUrl("/home");
     },3000);
   }
