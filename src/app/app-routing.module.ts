@@ -11,6 +11,7 @@ const routes: Routes = [
   {path: 'resume', component:ResumeComponent},
   {path: 'works', component: WorkComponent},
   {path: 'contact', component: ContactComponent},
+  {path: '/home', redirectTo: '/home', pathMatch: 'full'},
   {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: '**', component: MissingComponent},
 ];
