@@ -7,11 +7,11 @@ import { ResumeComponent } from './components/resume/resume.component';
 import { WorkComponent } from './components/work/work.component';
 
 const routes: Routes = [
+  {path: '', component: HomeComponent},
   {path: 'home', component: HomeComponent},
   {path: 'resume', component:ResumeComponent},
   {path: 'works', component: WorkComponent},
   {path: 'contact', component: ContactComponent},
-  {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: '**', component: MissingComponent},
 ];
 
